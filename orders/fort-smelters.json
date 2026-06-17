@@ -1,0 +1,130 @@
+[
+
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 82,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 250
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "WOOD",
+				"value" : 100
+			}
+		],
+		"job" : "MakeCharcoal"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 78,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "GOLD",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_GOLD_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_GOLD_ORE"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 79,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "SILVER",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_SILVER_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_SILVER_ORE"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 81,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "COPPER",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_COPPER_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_COPPER_ORE"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 80,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "IRON",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_IRON_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_IRON_ORE"
+	}
+]
