@@ -1,0 +1,629 @@
+[
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "DRINK",
+				"value" : 150
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_id" : "BREW_DRINK_FROM_PLANT",
+				"reaction_product" : "DRINK_MAT",
+				"value" : 10
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"empty",
+					"food_storage"
+				],
+				"reaction_id" : "BREW_DRINK_FROM_PLANT",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "BREW_DRINK_FROM_PLANT"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 9,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "DRINK",
+				"value" : 150
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"reaction_id" : "BREW_DRINK_FROM_PLANT_GROWTH",
+				"reaction_product" : "DRINK_MAT",
+				"value" : 10
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"empty",
+					"food_storage"
+				],
+				"reaction_id" : "BREW_DRINK_FROM_PLANT_GROWTH",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "BREW_DRINK_FROM_PLANT_GROWTH"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "FOOD",
+				"value" : 250
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"cookable"
+				],
+				"value" : 10
+			}
+		],
+		"job" : "PrepareMeal",
+		"meal_ingredients" : 4
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Monthly",
+		"id" : 16,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"gem"
+				],
+				"item_type" : "ROUGH",
+				"value" : 25
+			}
+		],
+		"job" : "CutGems"
+	},
+	{
+		"amount_left" : 4,
+		"amount_total" : 4,
+		"frequency" : "Daily",
+		"id" : 20,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"processable"
+				],
+				"item_type" : "PLANT",
+				"value" : 10
+			}
+		],
+		"job" : "ProcessPlants"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 21,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_class" : "CALCIUM_CARBONATE",
+				"reaction_id" : "PROCESS_FLUX_PLANTS",
+				"value" : 10
+			},
+			{
+				"condition" : "LessThan",
+				"item_type" : "BOULDER",
+				"material" : "INORGANIC:CALCITE",
+				"value" : 500
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "PROCESS_FLUX_PLANTS"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 32,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "CLOTH",
+				"material" : "PLANT:GRASS_TAIL_PIG:THREAD",
+				"value" : 100
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"collected",
+					"plant"
+				],
+				"item_type" : "THREAD",
+				"material" : "PLANT:GRASS_TAIL_PIG:THREAD",
+				"min_dimension" : 15000,
+				"value" : 10
+			}
+		],
+		"job" : "WeaveCloth",
+		"material_category" : 
+		[
+			"plant"
+		]
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 36,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"dyeable"
+				],
+				"item_type" : "CLOTH",
+				"min_dimension" : 10000,
+				"value" : 2
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"dye"
+				],
+				"value" : 4
+			}
+		],
+		"job" : "DyeCloth"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 37,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"collected",
+					"dyeable"
+				],
+				"item_type" : "THREAD",
+				"min_dimension" : 15000,
+				"value" : 2
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"dye"
+				],
+				"value" : 4
+			}
+		],
+		"job" : "DyeThread"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 40,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"milk"
+				],
+				"value" : 10
+			}
+		],
+		"job" : "MakeCheese"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 55,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_id" : "MAKE_SLURRY_FROM_PLANT",
+				"reaction_product" : "PRESS_PAPER_MAT",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_SLURRY_FROM_PLANT"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 56,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SHEET",
+				"value" : 100
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"non_pressed"
+				],
+				"item_type" : "GLOB",
+				"reaction_class" : "PAPER_SLURRY",
+				"reaction_id" : "PRESS_PLANT_PAPER",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "PRESS_PLANT_PAPER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 61,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"totemable",
+					"body_part"
+				],
+				"value" : 5
+			}
+		],
+		"job" : "MakeTotem"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 62,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten",
+					"shell",
+					"body_part"
+				],
+				"value" : 5
+			}
+		],
+		"job" : "MakeEarring",
+		"material_category" : 
+		[
+			"shell"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 71,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "ASH",
+				"value" : 25
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "WOOD",
+				"value" : 10
+			}
+		],
+		"job" : "MakeAsh"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 70,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"value" : 25
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "ASH",
+				"value" : 10
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"empty"
+				],
+				"item_type" : "BUCKET",
+				"value" : 10
+			}
+		],
+		"job" : "MakeLye"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 69,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"flags" : 
+				[
+					"soap"
+				],
+				"item_type" : "BAR",
+				"value" : 100
+			},
+			{
+				"condition" : "GreaterThan",
+				"contains" : 
+				[
+					"lye"
+				],
+				"reaction_id" : "MAKE_SOAP_FROM_TALLOW",
+				"value" : 10
+			},
+			{
+				"condition" : "GreaterThan",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "GLOB",
+				"reaction_class" : "TALLOW",
+				"reaction_id" : "MAKE_SOAP_FROM_TALLOW",
+				"reaction_product" : "SOAP_MAT",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_SOAP_FROM_TALLOW"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 82,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 250
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "WOOD",
+				"value" : 100
+			}
+		],
+		"job" : "MakeCharcoal"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 78,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "GOLD",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_GOLD_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_GOLD_ORE"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 79,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "SILVER",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_SILVER_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_SILVER_ORE"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 81,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "COPPER",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_COPPER_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_COPPER_ORE"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Daily",
+		"id" : 80,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"bearing" : "IRON",
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"reaction_id" : "CR_SMELT_IRON_ORE",
+				"value" : 15
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "CR_SMELT_IRON_ORE"
+	}
+]
