@@ -3,7 +3,7 @@
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 0,
+		"id" : 307,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -42,7 +42,7 @@
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 9,
+		"id" : 308,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -81,7 +81,7 @@
 		"amount_left" : 1,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 1,
+		"id" : 309,
 		"is_active" : true,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -112,7 +112,7 @@
 		"amount_left" : 20,
 		"amount_total" : 20,
 		"frequency" : "Monthly",
-		"id" : 16,
+		"id" : 310,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -133,7 +133,7 @@
 		"amount_left" : 4,
 		"amount_total" : 4,
 		"frequency" : "Daily",
-		"id" : 20,
+		"id" : 311,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -155,7 +155,7 @@
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 21,
+		"id" : 312,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -185,7 +185,7 @@
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 32,
+		"id" : 313,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -206,7 +206,7 @@
 				"item_type" : "THREAD",
 				"material" : "PLANT:GRASS_TAIL_PIG:THREAD",
 				"min_dimension" : 15000,
-				"value" : 10
+				"value" : 25
 			}
 		],
 		"job" : "WeaveCloth",
@@ -219,91 +219,33 @@
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 36,
+		"id" : 314,
 		"is_active" : false,
-		"is_validated" : true,
+		"is_validated" : false,
 		"item_conditions" : 
 		[
 			{
 				"condition" : "GreaterThan",
 				"flags" : 
 				[
-					"dyeable"
+					"plant"
 				],
 				"item_type" : "CLOTH",
 				"min_dimension" : 10000,
-				"value" : 2
-			},
-			{
-				"condition" : "GreaterThan",
-				"flags" : 
-				[
-					"unrotten",
-					"dye"
-				],
-				"value" : 4
+				"value" : 25
 			}
 		],
-		"job" : "DyeCloth"
+		"job" : "MakeCrafts",
+		"material_category" : 
+		[
+			"cloth"
+		]
 	},
 	{
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 37,
-		"is_active" : false,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "GreaterThan",
-				"flags" : 
-				[
-					"collected",
-					"dyeable"
-				],
-				"item_type" : "THREAD",
-				"min_dimension" : 15000,
-				"value" : 2
-			},
-			{
-				"condition" : "GreaterThan",
-				"flags" : 
-				[
-					"unrotten",
-					"dye"
-				],
-				"value" : 4
-			}
-		],
-		"job" : "DyeThread"
-	},
-	{
-		"amount_left" : 1,
-		"amount_total" : 1,
-		"frequency" : "Daily",
-		"id" : 40,
-		"is_active" : false,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "GreaterThan",
-				"flags" : 
-				[
-					"unrotten",
-					"milk"
-				],
-				"value" : 10
-			}
-		],
-		"job" : "MakeCheese"
-	},
-	{
-		"amount_left" : 2,
-		"amount_total" : 2,
-		"frequency" : "Daily",
-		"id" : 55,
+		"id" : 315,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -327,7 +269,7 @@
 		"amount_left" : 2,
 		"amount_total" : 2,
 		"frequency" : "Daily",
-		"id" : 56,
+		"id" : 316,
 		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
@@ -353,10 +295,35 @@
 		"reaction" : "PRESS_PLANT_PAPER"
 	},
 	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 320,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"item_subtype" : "ITEM_TOOL_QUIRE",
+				"item_type" : "TOOL",
+				"value" : 1000
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "SHEET",
+				"reaction_id" : "MAKE_QUIRE",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_QUIRE"
+	},
+	{
 		"amount_left" : 1,
 		"amount_total" : 1,
 		"frequency" : "Daily",
-		"id" : 71,
+		"id" : 317,
 		"is_active" : false,
 		"is_validated" : false,
 		"item_conditions" : 
@@ -379,7 +346,7 @@
 		"amount_left" : 1,
 		"amount_total" : 1,
 		"frequency" : "Daily",
-		"id" : 70,
+		"id" : 318,
 		"is_active" : false,
 		"is_validated" : false,
 		"item_conditions" : 
@@ -412,7 +379,7 @@
 		"amount_left" : 1,
 		"amount_total" : 1,
 		"frequency" : "Daily",
-		"id" : 69,
+		"id" : 319,
 		"is_active" : false,
 		"is_validated" : false,
 		"item_conditions" : 
@@ -445,7 +412,7 @@
 				"reaction_class" : "TALLOW",
 				"reaction_id" : "MAKE_SOAP_FROM_TALLOW",
 				"reaction_product" : "SOAP_MAT",
-				"value" : 10
+				"value" : 150
 			}
 		],
 		"job" : "CustomReaction",
