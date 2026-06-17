@@ -93,7 +93,7 @@
 					"unrotten"
 				],
 				"item_type" : "FOOD",
-				"value" : 250
+				"value" : 50
 			},
 			{
 				"condition" : "GreaterThan",
@@ -102,7 +102,7 @@
 					"unrotten",
 					"cookable"
 				],
-				"value" : 10
+				"value" : 50
 			}
 		],
 		"job" : "PrepareMeal",
@@ -351,54 +351,6 @@
 		],
 		"job" : "CustomReaction",
 		"reaction" : "PRESS_PLANT_PAPER"
-	},
-	{
-		"amount_left" : 1,
-		"amount_total" : 1,
-		"frequency" : "Daily",
-		"id" : 61,
-		"is_active" : false,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "GreaterThan",
-				"flags" : 
-				[
-					"unrotten",
-					"totemable",
-					"body_part"
-				],
-				"value" : 5
-			}
-		],
-		"job" : "MakeTotem"
-	},
-	{
-		"amount_left" : 1,
-		"amount_total" : 1,
-		"frequency" : "Daily",
-		"id" : 62,
-		"is_active" : false,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "GreaterThan",
-				"flags" : 
-				[
-					"unrotten",
-					"shell",
-					"body_part"
-				],
-				"value" : 5
-			}
-		],
-		"job" : "MakeEarring",
-		"material_category" : 
-		[
-			"shell"
-		]
 	},
 	{
 		"amount_left" : 1,

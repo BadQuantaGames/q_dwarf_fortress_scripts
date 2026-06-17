@@ -1,5 +1,7 @@
 #!/bin/bash
 
+./sync_scripts.sh
+
 cd "$(dirname "$0")" || exit 1
 
 if [ $# -gt 0 ]; then
