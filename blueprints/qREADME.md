@@ -12,6 +12,9 @@ Blueprint List
                         All Faith Temple
                         Workshops
                         Note: Add a Quantum stockpile to the center and Meal/Drink Stockpiles to center
+53x53_Nobles        Nobles Level with Better temple + a small graveyard.
+                    Note: Monarchs will demand a larger tomb/value than whats provided here. Either dig out 1-2 zones then engrave or add
+                    a quick value section with just engraved walls.
 Bedroom_3x3         Furn for a 3x3 Bedroom, Basic
 Bedroom_5x5         Furn for a 5x5 Bedroom_3x3
 dig_explore         Exploratory Dig pattern, leaves 5x5 rooms for future use if needed/wanted
