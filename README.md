@@ -8,3 +8,10 @@ A collection of scripts for DFHack/Dwarf Fortress I use
 
 
 Note: I lost my previous versions, scripts will be added as I play and need them.
+
+
+Mods that relate to above:
+
+Smelt by Product (should be base game imo)
+https://steamcommunity.com/sharedfiles/filedetails/?id=2907526097
+
