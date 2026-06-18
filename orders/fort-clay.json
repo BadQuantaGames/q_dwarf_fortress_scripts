@@ -1,0 +1,46 @@
+[
+	{
+		"amount_left" : 10,
+		"amount_total" : 10,
+		"frequency" : "Daily",
+		"id" : 448,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "LessThan",
+				"material" : "INORGANIC:FIRE_CLAY",
+				"value" : 150
+			}
+		],
+		"job" : "CollectClay"
+	},
+	{
+		"amount_left" : 10,
+		"amount_total" : 10,
+		"frequency" : "Daily",
+		"id" : 449,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BOULDER",
+				"material" : "INORGANIC:FIRE_CLAY",
+				"reaction_id" : "MAKE_CLAY_CRAFTS",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 50
+			},
+			{
+				"condition" : "GreaterThan",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_CLAY_CRAFTS"
+	}
+]

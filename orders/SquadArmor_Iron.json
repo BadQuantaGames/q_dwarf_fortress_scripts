@@ -77,6 +77,17 @@
 		"material" : "INORGANIC:IRON"
 	},
 	{
+		"amount_left" : 10,
+		"amount_total" : 10,
+		"frequency" : "OneTime",
+		"id" : 663,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_subtype" : "ITEM_HELM_HELM",
+		"job" : "MakeHelm",
+		"material" : "INORGANIC:IRON"
+	},
+	{
 		"amount_left" : 3,
 		"amount_total" : 3,
 		"frequency" : "OneTime",
